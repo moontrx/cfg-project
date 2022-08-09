@@ -1,0 +1,303 @@
+/* * and body properties are good to have for any site you build */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  } 
+
+body {
+    width:100%;
+}
+
+/* nav bar */
+.header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1.5px solid #e6e6e6;
+    background-color: antiquewhite;
+}
+
+.flex-container-nav {
+    margin-left: auto;
+    display: flex;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.logo-img {
+    width:80px;
+  }
+
+.nav {
+    padding-left: 20px;
+    margin: auto 20px;
+}
+
+.nav a {
+    color: #323232;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;  
+}
+
+.nav a:hover {
+    background-color: #fda239;
+    color: #fefbf7;
+}
+
+a.active {
+  /* background-color: #04AA6D; */
+  color: #ff8800;
+}
+
+/* .active {
+    background-color: #fda239;
+    display: block;
+  } */
+
+.home {
+    width:100%;
+    height: 800px;
+    background-color: lightslategray;
+    margin: auto;
+}
+
+.home h1 {
+    text-align: center;
+    overflow: hidden;
+    font-size: 36pt;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    color: gold;
+}
+
+.container {       
+    width:100%;
+}
+
+/* home page */
+
+.container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 36pt;
+    font-family: 'Open Sans', sans-serif;
+}
+.container2 > img {
+  height: 91vh;
+  object-fit: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-container {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.flex-container-top {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container-top{
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  .one {
+    background-image: url('./images/javier-garcia-PUKGAsRSPuk-unsplash.jpg'); 
+  }
+
+  .two {
+    background-image: url('./images/javier-garcia-PUKGAsRSPuk-unsplash.jpg');
+  }
+
+  .flex-box {
+    display:flex;
+    /* height: 500px;
+    width: 100%; */
+    padding: 100px;
+    border: 1.5px solid pink;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center center; */
+    background-size: cover; 
+  }
+
+  img{width:100%;} 
+
+
+/* Contact form */
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 20px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* submit button */
+input[type=submit] {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fda239;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff8800;
+}
+
+.container-contactform {
+  border-radius: 5px;
+  background-color: #fefbf7;
+  padding: 50px 500px; 
+  font-family: 'Open Sans', sans-serif;
+  color: #3a3a3a;
+}
+
+/* learn more button */
+.button {
+  background-color: #fda239;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 20px;
+}
+
+/* .active button {
+  background-color: #ff8800;
+} */
+
+/* .container-about {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+} */
+
+.about-flexbox1 {
+    display:flex;
+    width: 100%;
+    /* padding: 50px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+/* .about-flebox1 > img {
+  height: 91vh;
+  object-fit: cover;
+} */
+
+.about-flexbox2 {
+  /* display:flex; */
+    width: 100%;
+    padding: 50px;
+    /* border: 2px solid yellow; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  color: #323232;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  color: #323232;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+
+
+.button-contact {
+  background-color: #fda239;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-contact:hover {
+  background-color: #ff8800;
+  color: white; 
+}
+
+.flex-container-about {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container-about {
+    flex-direction: column;
+  }
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}

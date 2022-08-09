@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img class="logo-img" src="images/citywalk_logo.png" alt="CityWalk-logo"></a></div>
+        <div class="flex-container-nav">
+            <div class="nav"><a href="explore.html">Explore</a></div>
+            <div class="nav"><a href="about.html">About</a></div>
+            <div class="nav"><a class="active" href="contact.html">Contact</a></div>
+        </div>
+    </div>
+
+   <div class="container-contactform">
+    <form>
+  
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Smith">
+  
+      <label for="email">Your email address</label>
+      <input type="text" id="email" name="email" placeholder="abc@email.com">
+  
+      <label for="Reason">Reason for enquiry</label>
+      <select id="reason" name="reason">
+        <option value="default">Select...</option>
+        <option value="inquiry">General enquiry</option>
+        <option value="suggestion">Make a suggestion</option>
+        <option value="report">Report an issue</option>
+        <option value="other">Other</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Your message" style="height:150px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
